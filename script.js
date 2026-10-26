@@ -19,8 +19,8 @@
 
 function greet(name) {
   // Write your code here
-  let name = prompt("What is your name?")
-  return"Hello, " + name + "!";
+  let yourname = prompt("What is your name?")
+  return"Hello, " + yourname + "!";
 }
 
 
