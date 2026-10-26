@@ -20,7 +20,7 @@
 function greet(name) {
   // Write your code here
   let name = prompt("What is your name?")
-  return("Hello, " + name)
+  return("Hello, " + name + "!")
 }
 
 
@@ -60,9 +60,9 @@ function myFunc() {
 function getRandomNum(max) {
   // Write your code here
   if (isNaN(max) || max <1) {
-    return("0")
+    return(0)
   } else {
-    Math.floor(Math.random() * max)+1
+    return(Math.floor(Math.random() * max)+1)
   }
 }
 
@@ -99,7 +99,7 @@ function distance(x1, y1, x2, y2) {
   a = (x2 - x1)*(x2 - x1)
   b = (y2 - y1)*(y2 - y1)
   c = a + b
-  Math.sqrt(c.toFixed(2))
+  return(Math.sqrt(c).toFixed(2))
 }
 
 
@@ -111,10 +111,10 @@ function distance(x1, y1, x2, y2) {
 // STEP 3: Return the total rounded to 2 decimal places
 //         using .toFixed(2).
 //         Example: tipCalc(50, 20) → tip is 10, total is "60.00"
-let tip = 0
-let total = 0
 function tipCalc(bill, tipPercent) {
   // Write your code here
+  let tip = 0
+  let total = 0
   tip = bill*(tipPercent/100)
   total = bill + tip
   return(total.toFixed(2))
